@@ -1,0 +1,12 @@
+{% extends 'layoutAdmin.html.twig' %}
+
+{% block title %}Edit Prestations{% endblock %}
+
+{% block content %}
+    <h1>Edit Prestations</h1>
+
+    {{ include('prestations/_form.html.twig', {'button_label': 'Mettre à jour'}) }}
+
+    <a href="{{ path('homeAdmin') }}">Retour à la liste des prestations</a>
+
+{% endblock %}

@@ -1,0 +1,47 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+<main class"main-admin">
+    <div class="row admin ">
+        <div class="col s3 m3 l3 col-admin col-admin-droite">
+            <section class="section-admin-droite">
+                {# <figure>
+                    <img src="{{ asset("images/logo.png") }}" alt="">
+                </figure> #}
+                <a href="{{path('admin_prestations')}}" class="title-admin"><i class="material-icons">collections</i>
+                    Prestations</a>
+                <ul class="">
+                    <li><a href="{{path('admin_prestations')}}">Gestion des prestations</a></li>
+                    <li><a href="{{path('prestations_index')}}" target="_blank">Voir les prestations sur le site</a>
+                    </li>
+                </ul>
+                <a href="{{path('admin_creneaux')}}" class="title-admin"><i class="material-icons">event</i> Rdv</a>
+                <ul class="">
+                    <li><a href="{{path('admin_creneaux')}}">Ajouter une disponiblité</a></li>
+                    <li><a href="#">Rendez-vous à venir</a></li>
+                    <li><a href="#">Recapitulatif des rendez-vous</a></li>
+                </ul>
+                <a href="#" class="title-admin"><i class="material-icons">format_paint</i> Thème du site</a>
+                <ul class="">
+                    <li><a href="#">Page d'accueil</a></li>
+                    <li><a href="#">Prestations</a></li>
+                    <li><a href="#">Rendez-vous</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                <button class="btn btn-logout"><a href="{{path('deconnexion',{'role':'admin'})}}"><i
+                            class="material-icons">arrow_back</i></a></button>
+
+            </section>
+
+        </div>
+        <div class="col s9 m9 l9 col-admin col-admin-bg">
+            <section class="section-admin-gauche">
+                <section class=" admin-page-content">
+
+                    {% block content %}{% endblock %}
+                </section>
+            </section>
+        </div>
+    </div>
+</main>
+{% endblock %}

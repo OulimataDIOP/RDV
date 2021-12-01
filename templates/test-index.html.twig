@@ -1,0 +1,48 @@
+{% extends 'layout.html.twig' %}
+{% block body %}
+
+<div class="row home-content">
+        <div class="col s4 purple lighten-3">
+            <div class="row">
+                <div class="col s12 bloc-carre-home pink accent-1">
+                    <figure>
+                        <img src="{{ asset("images/ongles-s.png") }}" alt="" class="images-bloc-home">
+                    </figure>
+                </div>
+                <div class="col s12 bloc-carre-home purple lighten-3">
+                    <div class="left-bloc-home ">
+                        <div class="left-bottom-bloc-home">
+                            <h3>suivez-nous</h3>
+                            {# <figure>
+                            <img src="{{ asset("images/instagram.png") }}" alt="" class="images-bloc-home">
+                            <img src="{{ asset("images/snapchat.png") }}" alt="" class="images-bloc-home">
+                            </figure> #}
+                        </div>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="col s4 purple darken-1">
+            <div class="middle-bloc-home">
+            
+            </div>
+        </div>
+        <div class="col s4 purple lighten-2">
+            <div class="row">
+                <div class="bloc-carre-home black right-top-bloc-home">
+                        <div class="right-bloc-home">
+                            <p ><a href="{{ path('prestations_index') }}" class=" white-text">poses d'ongles sur-mesure</a></p>
+                            <h3 ><a href="{{ path('prestations_index') }}" class="white-text">Voir nos prestations</a></h3>
+                            <a href="{{ path('prestations_index') }}"><img src="{{ asset("images/fleche.png") }}"></a>
+                        </div>
+                </div>
+                <div class="bloc-carre-home purple lighten-2">
+                    <figure>
+                        <img src="{{ asset("images/ongles-baby-color.png") }}" alt="" class="images-bloc-home">
+                    </figure>
+                </div>
+            </div>
+        </div>
+</div>
+<a href=""></a>
+    {% endblock %}

@@ -1,0 +1,28 @@
+{% extends 'base.html.twig' %}
+
+{% block header %}
+
+<nav>
+    <div class="nav-wrapper">
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger show-on-large"><i class=" icone-blanc fas fa-bars"></i></a>
+      <a class="btn-large purple darken-4 right rdv" href="{{ path('rdv') }}">Prendre un rdv</a>
+      <ul class="right hide-on-med-and-down ">
+        
+      </ul>
+    </div>
+      <ul class="sidenav" id="mobile-demo">
+        <a href="#" data-target="mobile-demo" class="show-on-large sidenav-close"><i class="icone-blanc fas fa-times"></i></a>
+        <li><a href="{{ path('home') }}"><i class=" icone-blanc fas fa-home"></i></a></li>
+      <li><a href="#">Prendre un rdv</a></li>
+      <li><a href="{{ path('prestations_index') }}">Prestations</a></li>
+      <li><a href="{{ path('contact') }}">Contact</a></li>
+      
+
+    </ul>
+</nav>
+
+    
+{% endblock %}
+
+
+

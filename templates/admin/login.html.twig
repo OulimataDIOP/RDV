@@ -1,0 +1,30 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+<main class="yellow lighten-1 bg-home-admin">
+    <div class="form-container">
+        <div class=" white form-content row">
+            <section class=" blue login-form col s12 m12 l8">
+                <img src="images/nails.png" alt="">
+            </section>
+            <section class=" white login-form col s12 m12 l4">
+                <form class="user" method="post">
+                    <div class="alert alert-danger" role="alert">
+                        {{error}}
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name ="identifiant" class="form-control form-control-user" placeholder="Identifiant">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" name="password"class="form-control form-control-user" placeholder="Mot de passe">
+                    </div>
+                    <input type="submit" class="btn btn-login" value="Se connecter"> 
+                </form>
+            </section>
+            
+        </div>
+        
+    </div>
+</main>
+{% endblock %}
+

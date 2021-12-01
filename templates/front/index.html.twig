@@ -1,0 +1,58 @@
+{% extends 'layout.html.twig' %}
+
+{% block body %}
+
+<div class="row">
+      <div class="bloc-index-droite col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 row">
+        <ul class="centrer">
+            <li><a href="{{ path('prestations_index') }}" >Poses d'ongles sur-mesure</a></li>
+            <li><a href="{{ path('prestations_index') }}" >Ongles en gel <br>Montreuil Croix de Chavaux</a></li>
+        </ul>
+      </div>
+      <div class=" col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+    <figure class="center img-home">
+      <img src="{{ asset("images/yab-home.png") }}" class="img-fluid">
+    </figure>
+      </div>
+</div>
+
+{# <div class="row">
+<div class="carousel-video col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+  <figure>
+    <video muted preload="true" autoplay="true" loop="loop" width="300" class="video">
+      <source src="{{ asset("videos/yab.mp4") }}" type="video/mp4">
+    </video>
+  </figure>
+  <figure>
+    <video muted preload="true" autoplay="true" loop="loop" width="300" class="video">
+      <source src="{{ asset("videos/yab2.mp4") }}"type="video/mp4">
+    </video>
+  </figure>
+  <figure>
+    <video muted preload="true" autoplay="true" loop="loop" width="300" class="video">
+      <source src="{{ asset("videos/yab3.mp4") }}"type="video/mp4">
+    </video>
+  </figure>
+</div> #}
+<div class="bloc-index-apropos col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+         <p>Manucure, pédicure, pose de vernis classique ou semi-permanent, pose de faux ongles en gel, une carte de soins variée et complète vous est proposée dans un cadre où la qualité des prestations et le service sont au centre de toutes les attentions.</p>
+        
+      </div>
+</div>
+<div class="bloc-index-reseaux col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+            <ul class="centrer">
+          <li>
+            <h2>
+              Suivez Yab_sparklenails sur <br>les réseaux sociaux
+            </h2>
+          </li>
+          <li>
+            <a href="{{ path('prestations_index') }}"><img src="{{ asset("images/instagram.png") }}" class="img-fluid logo-small-round"></a>
+            <a href="{{ path('prestations_index') }}"><img src="{{ asset("images/tiktook.svg") }}" class="img-fluid logo-small-round"></a>
+            <a href="{{ path('prestations_index') }}"><img src="{{ asset("images/snapchat.png") }}" class="img-fluid logo-small-round"></a>
+          </li>
+        </ul>
+        
+      </div>
+</div>
+{% endblock %}

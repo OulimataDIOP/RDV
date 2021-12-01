@@ -1,0 +1,28 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Prestations</h1>
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>Titre de la prestation</th>
+                <td>{{ prestation.titre }}</td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>{{ prestation.description }}</td>
+            </tr>
+            <tr>
+                <th>Image</th>
+                <td><img src="{{ asset("images/imagesUpload/" ~ prestation.image )}}" alt="" class="img-prestation" ></td>
+            </tr>
+            <tr>
+                <th>Prix</th>
+                <td>{{ prestation.prix }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+{% endblock %}

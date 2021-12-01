@@ -1,0 +1,60 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+<main class"main-admin">
+    <div class="row admin animate__animated animate__slideInRight">
+        <div class="col s3 m3 l3 col-admin col-admin-droite">
+            <section class="section-admin-droite">
+                {# <figure>
+                    <img src="{{ asset("images/logo.png") }}" alt="">
+                </figure> #}
+                <a href="{{path('admin_prestations')}}" class="title-admin"><i class="material-icons">collections</i>
+                    Prestations</a>
+                <ul class="">
+                    <li><a href="{{path('admin_prestations')}}">Gestion des prestations</a></li>
+                    <li><a href="{{path('prestations_index')}}" target="_blank">Voir les prestations sur le site</a>
+                    </li>
+                </ul>
+                <a href="{{path('admin_creneaux')}}" class="title-admin"><i class="material-icons">event</i> Rdv</a>
+                <ul class="">
+                    <li><a href="{{path('admin_creneaux')}}">Ajouter une disponiblité</a></li>
+                    <li><a href="#">Rendez-vous à venir</a></li>
+                    <li><a href="#">Recapitulatif des rendez-vous</a></li>
+                </ul>
+                <a href="#" class="title-admin"><i class="material-icons">format_paint</i> Thème du site</a>
+                <ul class="">
+                    <li><a href="#">Page d'accueil</a></li>
+                    <li><a href="#">Prestations</a></li>
+                    <li><a href="#">Rendez-vous</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                <button class="btn btn-logout"><a href="{{path('deconnexion',{'role':'admin'})}}"><i
+                            class="material-icons">arrow_back</i></a></button>
+            </section>
+
+        </div>
+        <div class="col s9 m9 l9 col-admin col-admin-bg">
+            <section class="section-admin-gauche">
+                <section class=" admin-page-content">
+                    <article class="col s12 m12 l12">
+                        <div class="card small col s4 m4 l4 card-admin">
+                            <h4>Affichage du prochain rdv</h4>
+                        </div>
+                        <div class="card small col s4 m4 l4 card-admin">
+                            <h4>Récap des prestations prises sous forme de diagramme chart</h4>
+                        </div>
+                        <div class="card small col s4 m4 l4 card-admin">
+                            <h4>Affichage du total des accomptes du mois en cours</h4>
+                        </div>
+                    </article>
+                    <article class="col s12 m12 l12">
+                        <h4>Données de Google Analytics - Nombre de visiteurs - Panier abandonnés...</h4>
+                    </article>
+
+                    {# {% block content %}{% endblock %} #}
+                </section>
+            </section>
+        </div>
+    </div>
+</main>
+{% endblock %}

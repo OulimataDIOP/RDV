@@ -1,0 +1,300 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    /* background-image: linear-gradient(45deg, #743398 17.66%, #d83772 17.66%, #d83772 33.94%, #d390f8 33.94%, #d390f8 50%, #743398 50%, #743398 67.66%, #d83772 67.66%, #d83772 83.94%, #d390f8 83.94%, #d390f8 100%);
+    background-size: 308.30px 308.30px; */
+    /* background-image: linear-gradient(45deg, #743398 28.04%, #d83772 28.04%, #d83772 39.10%, #d390f8 39.10%, #d390f8 50%, #743398 50%, #743398 78.04%, #d83772 78.04%, #d83772 89.10%, #d390f8 89.10%, #d390f8 100%);
+background-size: 453.96px 453.96px; */
+/* background-image: linear-gradient(45deg, #743398 36.73%, #fc67ff 36.73%, #fc67ff 37.76%, #d390f8 37.76%, #d390f8 50%, #743398 50%, #743398 86.73%, #fc67ff 86.73%, #fc67ff 87.76%, #d390f8 87.76%, #d390f8 100%);
+background-size: 346.48px 346.48px; */
+/* background-image: linear-gradient(45deg, #743398 25%, #d390f8 25%, #d390f8 50%, #743398 50%, #743398 75%, #d390f8 75%, #d390f8 100%);
+background-size: 1414.21px 1414.21px; */
+/* background-image: linear-gradient(45deg, #d83772 16.67%, #d390f8 16.67%, #d390f8 33.33%, #743398 33.33%, #743398 50%, #d83772 50%, #d83772 66.67%, #d390f8 66.67%, #d390f8 83.33%, #743398 83.33%, #743398 100%);
+background-size: 2121.32px 2121.32px; */
+background-image: linear-gradient(45deg, #fc67ff 16.67%, #d390f8 16.67%, #d390f8 33.33%, #743398 33.33%, #743398 50%, #fc67ff 50%, #fc67ff 66.67%, #d390f8 66.67%, #d390f8 83.33%, #743398 83.33%, #743398 100%);
+background-size: 2121.32px 2121.32px;
+}
+html , body, .block{
+    height: 100%;
+    font-family: Montserrat;
+
+}
+h1{
+    text-align: center;
+    font-family: Montserrat bold;
+    color: #4a148c;
+}
+/* CAROUSEL */
+.carousel{
+    perspective: 250px;
+    height: 100%;
+}
+.carousel .carousel-item{
+    width: 700px;
+}
+
+.logo{
+    max-width:  15%;
+    margin-top: 5%;
+}
+.icone-violet{
+    color: #4a148c;
+}
+.icone-blanc{
+    color: white;
+}
+nav{
+    background-color: transparent;
+}
+.sidenav{
+    background-color: rgba(212, 145, 248, 0.529);
+}
+.sidenav > li > a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+}
+.sidenav > li > a > i{
+    color: white;
+}
+.sidenav-close > i {
+    text-align: right;
+}
+/* .nav1 {
+    color: #4a148c;
+}
+
+nav, i{
+    color: #4a148c;
+} */
+.test{
+    background-color: red;
+    color: red;
+}
+
+.rdv{
+    margin: 4px !important;
+}
+.titre-prestation{
+    color : red;
+}
+.img-prestation{
+    width: 50%;
+}
+
+.card-description{
+    background-color: #4a148c;
+    color : white;
+    padding : 20px 10px;
+}
+.card-bloc{
+height: 900px !important;
+}
+.titre-prestation{
+    color : white;
+    text-transform: uppercase;
+    font-size : 20px;
+    font-weight: bold;
+}
+.prestation-prix{
+    color: white;
+    font-size : 20px;
+    font-weight: bold;
+}
+.opacity-filtre{
+    background-color: rgba(255, 255, 255, 0.4);
+}
+/* INDEX */
+.logo-small-round{
+    max-width: 50px;
+    clip-path: circle(50% at 50% 50%);
+    margin :5px;
+}
+.logo-small-round:hover{
+    max-width: 100px;
+    clip-path: circle(50% at 50% 50%);
+    margin :5px;
+    animation: bounce; 
+    animation-duration: 1s;
+}
+.img-home{
+    margin : 0
+}
+.centrer{
+    text-align: center;
+}
+.bloc-index-droite {
+    /*background-color: rgba(0, 0, 0);*/
+}
+.bloc-index-apropos {
+    background-color: rgba(0, 0, 0);
+    margin : 0;
+}
+.bloc-index-reseaux {
+    background-color: rgba(0, 0, 0);
+    margin : 0;
+}
+.bloc-index-droite > ul > li > a{
+    color: white;
+    text-decoration: none;
+    font-size: 2rem;
+}
+.bloc-index-droite > ul > li:first-child{
+    text-transform: uppercase;
+}
+
+.bloc-index-gauche {
+    background-color: rgba(255, 255, 255, 0.201);
+    padding: 0px 15px;
+}
+.bloc-index-gauche > ul > li > h2{
+    color: black;
+    font-size: 2rem;
+
+}
+/* CAROUSEL */
+
+
+/* ADMIN */
+.col-admin{
+    height: 100vh;
+}
+.admin,a{
+    color:grey
+}
+
+.title-admin{
+    display: block;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    margin : 5px 0px;
+    /* background-color: black;
+    padding: 5px; */
+}
+
+.section-admin-droite > a:first-of-type{
+    color:white;
+   background-color: #2bbf0e;
+    padding: 5px;
+    box-shadow: 1px 1px 1px rgb(80, 80, 80);
+    transition-duration: 400ms;
+}
+.section-admin-droite > ul:first-of-type > li > a:hover{
+    color:#2bbf0e;
+    font-weight: bold;
+    transition-duration: 400ms;
+    font-size: 1.2rem;
+}
+
+
+.section-admin-droite > a:nth-of-type(2){
+    color:white;
+   background-color: #f39f21;
+    padding: 5px;
+    box-shadow: 1px 1px 1px rgb(80, 80, 80);
+    
+}
+
+.carousel-video{
+    margin: auto;
+}
+
+.section-admin-droite > ul:nth-of-type(2) > li > a:hover{
+    color:#f39f21;
+    font-weight: bold;
+    transition-duration: 400ms;
+    font-size: 1.2rem;
+}
+.section-admin-droite > a:last-of-type{
+    color:white;
+   background-color: #f03a64;
+    padding: 5px;
+    box-shadow: 1px 1px 1px rgb(80, 80, 80);
+    transition-duration: 400ms;
+}
+.section-admin-droite > ul:last-of-type > li > a:hover{
+    color:#f03a64;
+    transition-duration: 400ms;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.title-admin i {
+    font-size: 1.4rem;
+}
+.title-admin, ul,li{
+    margin : 15px 0px;
+}
+
+.bg-home-admin{
+    height: 100vh;
+    display: flex;
+    
+}
+.form-container{
+margin: auto;
+}
+.form-content{
+    border-radius: 15px;
+    display: flex;
+}
+.login-form{
+    margin: auto;
+
+}
+.login-form, input{
+    text-align: center;
+}
+.login-form img{
+    max-width: 100%;
+    height: 100%;
+}
+.btn-login{
+    background-color: #2196f3;
+    margin: 15px 0px;
+    border-radius: 10px;
+}
+.btn-logout{
+    background-color: black;
+    color: white;
+    margin: 15px 0px;
+    border-radius: 10px;
+}
+.btn-logout > a{
+    color: white;
+}
+.btn-logout:hover{
+    background-color:black;
+    color: white;
+    margin: 15px 0px;
+    border-radius: 10px;
+}
+.animate__animated.animate__slideInRight{
+    --animate-duration: 1s;
+}
+.admin-page-content{
+    border-radius: 15px;
+    height: 90vh;
+    padding: 5px;
+    background-color: rgb(242, 242, 242);
+}
+main, .main-admin{
+    background-color: #2196f3;
+}
+.col-admin-bg{
+    
+    background-image: url('../public/images/pattern.png') no-repeat center fixed;
+    background-size: cover;
+}
+.col-admin-droite{
+    box-shadow: 3px 3px 3px rgb(80, 80, 80);
+    background-color: rgb(242, 242, 242);
+}
+
+/* CALENDAR */
+
+
+/* color: #4a148c; */

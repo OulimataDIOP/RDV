@@ -1,0 +1,71 @@
+{% extends 'layout.html.twig' %}
+
+{% block title %}Prestations
+{% endblock %}
+{# AJOUTER UN HREF DANS LES ICONES DE CALENDRIER AVEC UN PRESTATION.ID ET RECUPERER 
+LE PRIX DE LA PRESTATION PRESTATION.PRIX PUIS CALUL DE L4ACOMPTE <a href="{{ path('prestations_show', {'id': prestation.id}) }} #}
+{% block body %}
+	<h1>Nos prestations</h1>
+
+	
+		<div class="container-fluid">
+		<div class="row">
+        {% for prestation in prestations %}
+        <div class="col s4 card-bloc">
+			<div class="card card-prestation " style="background : url({{ asset("images/imagesUpload/" ~ prestation.image ) }}) no-repeat center fixed; background-size: cover;">
+			<a class="btn-floating teal right"><i class="material-icons">event</i></a>
+			<div class="opacity-filtre">
+				<div class="card-content white-text center" >
+					<img src="{{ asset("images/imagesUpload/" ~ prestation.image ) }}" alt="" class="img-prestation" id="img-prestation">
+				</div>
+			</div>
+				<div class="card-description">
+					<span class="card-title titre-prestation">{{prestation.titre}}
+					<p class="prestation-prix right">{{ prestation.prix }} €</p>
+					</span>
+					<a href="path('details')">{{ prestation.description|slice(0, 4) }}...<br>En savoir plus</a>
+                </div>
+    
+		</div>
+    </div>
+	{% else %}
+		<tr>
+			<td colspan="6">Il n'y a pas de prestations pour l'instant</td>
+		</tr>
+    {% endfor %}
+</div>
+</div>
+{# 
+ <a href="{{ path('prestations_new') }}">Create new</a> #}
+{% endblock %}
+{# CRUD #}
+    {# <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Jour</th>
+                <th>Heure_debut</th>
+                <th>Heure_fin</th>
+                <th>actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for prestation in prestations %}
+            <tr>
+                <td>{{ prestation.id }}</td>
+                <td>{{ prestation.titre}}</td>
+                <td>{{ prestation.description}}</td>
+                <td>{{ prestation.image}}</td>
+                <td>{{ prestation.prix}}</td>
+                <td>
+                    <a href="{{ path('prestations_show', {'id': rdv.id}) }}">show</a>
+                    <a href="{{ path('prestations_edit', {'id': rdv.id}) }}">edit</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="5">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table> #}

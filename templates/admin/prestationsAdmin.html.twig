@@ -1,0 +1,45 @@
+{% extends 'layoutAdmin.html.twig' %}
+
+{% block content %}
+<table class="table">
+<p style="background:grey">Liste des prestations</p>
+<a href="{{ path('prestations_index')}}">Voir sur le site</a>
+
+{% for prestation in prestations %}
+<a href="{{ path('prestations_new') }}">new</a>
+<br>
+{% endfor %}
+{# <a href="{{ path('prestations_new', {'id': prestation.id}) }}">new</a> #}
+
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Titre</th>
+                <th>Description</th>
+                <th>Image</th>
+                <th>prix</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for prestation in prestations %}
+            <tr>
+                <td>{{ prestation.id }}</td>
+                <td>{{ prestation.titre}}</td>
+                <td>{{ prestation.description}}</td>
+                <td><img src="{{ asset("images/imagesUpload/" ~ prestation.image ) }}" alt="" class="img-prestation" ></td>
+                <td>{{ prestation.prix}}</td>
+                <td>
+                    <a href="{{ path('prestations_show', {'id': prestation.id}) }}">SUPPRIMER</a>
+                    <a href="{{ path('prestations_edit', {'id': prestation.id}) }}">MODIFIER</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="5">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    
+{% endblock %}
